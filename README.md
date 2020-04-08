@@ -55,8 +55,8 @@ Standard ML library for sets and maps.
 ## Use of the package
 
 This library is set up to work well with the SML package manager
-[smlpkg]().  To use the package, in the root of your project
-directory, execute the command:
+[smlpkg](https://github.com/diku-dk/smlpkg).  To use the package, in
+the root of your project directory, execute the command:
 
 ```
 $ smlpkg add github.com/diku-dk/sml-setmap
