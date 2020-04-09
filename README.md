@@ -8,47 +8,45 @@ Standard ML library for sets and maps.
 
 - `lib/github.com/diku-dk/sml-setmap/set.mlb`:
 
-  - **signature** `SET_BASE`
-  - **signature** `SET_EQ`
-  - **signature** `SET_ORD`
-  - **structure** `SetEq : SET_EQ`
+  - **signature** [`SET_COMPARE`](lib/github.com/diku-dk/sml-setmap/set/SET_COMPARE.sig)
+  - **structure** `SetEq :> SET_COMPARE where type cmp = bool`
 
 - `lib/github.com/diku-dk/sml-setmap/mono_set.mlb`:
 
-  - **signature** `MONO_SET`
-  - **functor** `OrderSet(type t val compare: t*t->order)`
+  - **signature** [`MONO_SET`](lib/github.com/diku-dk/sml-setmap/set/MONO_SET.sig)
+  - **functor** `OrderSet(type t val compare: t*t->order) : MONO_SET where type elem = t`
 
 - `lib/github.com/diku-dk/sml-setmap/string_set.mlb`:
 
-  - **signature** `MONO_SET`
-  - **structure** `StringSet : MONO_SET where type elem = string`
+  - **signature** [`MONO_SET`](lib/github.com/diku-dk/sml-setmap/set/MONO_SET.sig)
+  - **structure** `StringSet :> MONO_SET where type elem = string`
 
 - `lib/github.com/diku-dk/sml-setmap/int_set.mlb`:
 
-  - **signature** `MONO_SET`
-  - **structure** `IntSet : MONO_SET where type elem = int`
+  - **signature** [`MONO_SET`](lib/github.com/diku-dk/sml-setmap/set/MONO_SET.sig)
+  - **structure** `IntSet :> MONO_SET where type elem = int`
 
 - `lib/github.com/diku-dk/sml-setmap/word_set.mlb`:
 
-  - **signature** `MONO_SET`
-  - **structure** `WordSet : MONO_SET where type elem = word`
+  - **signature** [`MONO_SET`](lib/github.com/diku-dk/sml-setmap/set/MONO_SET.sig)
+  - **structure** `WordSet :> MONO_SET where type elem = word`
 
 ### Maps
 
 - `lib/github.com/diku-dk/sml-setmap/mono_map.mlb`:
 
-  - **signature** `MONO_MAP`
-  - **functor** `OrderMap(type t val compare: t*t->order)`
+  - **signature** [`MONO_MAP`](lib/github.com/diku-dk/sml-setmap/map/MONO_MAP.sig)
+  - **functor** `OrderMap(type t val compare: t*t->order) : MONO_MAP where type dom = t`
 
 - `lib/github.com/diku-dk/sml-setmap/string_map.mlb`:
 
-  - **signature** `MONO_MAP`
-  - **structure** `StringMap : MONO_MAP where type dom = string`
+  - **signature** [`MONO_MAP`](lib/github.com/diku-dk/sml-setmap/map/MONO_MAP.sig)
+  - **structure** `StringMap :> MONO_MAP where type dom = string`
 
 - `lib/github.com/diku-dk/sml-setmap/int_map.mlb`:
 
-  - **signature** `MONO_MAP`
-  - **structure** `IntMap : MONO_MAP where type dom = int`
+  - **signature** [`MONO_MAP`](lib/github.com/diku-dk/sml-setmap/map/MONO_MAP.sig)
+  - **structure** `IntMap :> MONO_MAP where type dom = int`
 
 
 

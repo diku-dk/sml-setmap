@@ -1,7 +1,6 @@
 (** Base signature for polymorphic sets.
 
-The SET_COMPARE signature is a generic interface to polymorphic sets
-and is the basis for SET_EQ and SET_ORDER.
+The SET_COMPARE signature is a generic interface to polymorphic sets.
 *)
 
 signature SET_COMPARE = sig
