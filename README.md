@@ -1,4 +1,4 @@
-# sml-setmap [![Build Status](https://travis-ci.org/diku-dk/sml-setmap.svg?branch=master)](https://travis-ci.org/diku-dk/sml-setmap)
+# sml-setmap [![CI](https://github.com/diku-dk/sml-setmap/workflows/CI/badge.svg)](https://github.com/diku-dk/sml-setmap/actions)
 
 Standard ML library for sets and maps.
 
