@@ -27,10 +27,47 @@ end
 
 (**
 
-[addList (s,l)] adds elements in list l to s.
+[type set] The set type.
 
-[fold f base s] folds using f over the base element.
+[type elem] The type of elements.
 
-[app f s] applies f to each element of s (in order).
+[empty] The empty set.
+
+[singleton e] The singleton set {e}.
+
+[size s] The cardinality of the set s.
+
+[isEmpty s] returns true if the set is empty. Returns false otherwise.
+
+[member (e, s)] returns true if e is in s Returns false otherwise.
+
+[eq (s1, s2)] returns true if the two sets s1 and s2 are
+equal. Returns false otherwise.
+
+[list s] returns the elements of s as a list. The order is
+implementation dependent.
+
+[fromList l] returns the set consisting of the elements in the list l.
+
+[insert (e, s)] returns s with e inserted.
+
+[remove (e, s)] returns s with e removed.
+
+[difference (s1, s2)] returns s1 with the elements in s2 removed.
+
+[intersect (s1, s2)] returns the intersection of s1 and s2.
+
+[union (s1, s2)] returns the union of s1 and s2.
+
+[partition f s] returns a pair of sets (s1, s2) where f returns true
+for each element in s1 and false for each element in s2 and where s is
+the union of s1 and s2. The order in which f is applied to the
+elements of s is implementation dependent.
+
+[fold f base s] folds using f over the base element. The order in
+which f is applied to the elements of s is implementation dependent.
+
+[app f s] applies f to each element of s (the order is implementation
+dependent).
 
 *)

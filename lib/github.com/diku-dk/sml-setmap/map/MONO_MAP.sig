@@ -33,6 +33,24 @@ signature MONO_MAP = sig
 end
 
 (**
+
+[type dom] The domain type for the map.
+
+[type 'a map] The type of map.
+
+[empty] The empty map.
+
+[singleton (k, v)] The singleton map {k -> v}.
+
+[isEmpty m] returns true if m is empty and false otherwise.
+
+[lookup m k] returns SOME v if k is associated with v in m. Returns
+NONE otherwise.
+
+[add (k, v, m)] returns m with k associated to v.
+
+[plus (m1, m2)] returns m1 with the associations in m2 added.
+
 [addList l m] adds a list of associations to a map.
 
 [merge f m1 m2] merges two finite maps, with a composition function

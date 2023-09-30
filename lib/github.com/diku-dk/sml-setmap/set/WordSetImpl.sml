@@ -1,5 +1,4 @@
-
-(***********************************************************************
+(*
   WordSet
 
   Applicative representation of finite sets of naturals, 1993-01-03
@@ -10,7 +9,7 @@
   Modified by Martin Elsman, Department of Computer Science,
   University of Copenhagen, 1996-06-08, to use bits in integers to
   hold containment information.
-***********************************************************************)
+*)
 
 signature WORD_SET_IMPL =
     sig
@@ -196,7 +195,7 @@ structure WordSetImpl :> WORD_SET_IMPL =
 
 end
 
-(***********************************************************************
+(*
 
 Representation:
 
@@ -221,4 +220,4 @@ difference(is1,is2) take time proportional to the cardinality of the
 smaller set.  The operations members(is) and cardinality(is) take
 time proportional to the size of is.
 
-***********************************************************************)
+*)
