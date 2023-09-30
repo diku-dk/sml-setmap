@@ -1,3 +1,2 @@
-structure WordSet :>
-    MONO_SET where type elem = word
-    = WordSetImpl
+structure WordSet :> MONO_SET where type elem = word
+  = WordSetImpl
