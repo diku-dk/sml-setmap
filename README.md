@@ -1,6 +1,8 @@
 # sml-setmap [![CI](https://github.com/diku-dk/sml-setmap/workflows/CI/badge.svg)](https://github.com/diku-dk/sml-setmap/actions)
 
-Standard ML library for sets and maps.
+Standard ML library for sets and maps. The structures `IntSet`, `WordSet`,
+`IntMap`, and `WordMap` are based on Okasaki's and Gill's [Fast Mergable Integer Maps](docs/IntMap98.pdf).
+The functors `OrderSet` and `OrderMap` are based on balanced AVL trees, with instantiations `StringSet` and `StringMap`.
 
 ## Overview of MLB files
 
